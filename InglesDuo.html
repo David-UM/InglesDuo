@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Duolingo Program</title>
+    <link rel="stylesheet" href="./InglesDuoStyles.css">
+</head>
+<body>
+    
+    <header>
+        <a href="https://www.duolingo.com/learn"><img src="./Duo.png" class="DuoImg"></a>
+        <h1>Pequeño simulador de Duolingo para lecciones en Ingles</h1>
+    </header>
+    
+    <div>
+    <p class="azar">
+        Haga click en el boton para obtener un ejercicio al azar
+        <input type="button" value="Obtener" id="Azarboton" class="botones">
+    </p>
+    <p class="infoFaltante">
+        Haga click en el boton para obtener informacion del progreso restante
+        <input type="button" value="Obtener" id="Infoboton" class="botones">
+    </p>
+    <p class="infoHecho">
+        Haga click en el boton para obtener informacion del progreso que has hecho
+        <input type="button" value="Obtener" id="Infoboton2" class="botones">
+    </p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" class="historial">Historial</th>
+            </tr> 
+            <tr>
+                <th class="Mes">Abril</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Debes realizar 1 saltos en el tema de Banco 2 que está en la sección 6</td>
+                <td>04.24.2022</td>
+            </tr>
+            <tr>
+                <td>Debes avanzar 6 niveles en el tema de Noticias que está en la sección 5</td>
+                <td>04.25.2022</td>
+            </tr>
+            <tr>
+                <td>Debes avanzar 5 niveles en el tema de ¿Qué paso? que está en la sección 7</td>
+                <td>04.26.2022</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+    <script src="./InglesDuoScripts.js">  </script>
+</body>
+</html>

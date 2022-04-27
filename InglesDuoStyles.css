@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ h1{
+    color:white;   
+    padding-left: 20%;
+    display:inline-block
+    
+}
+
+.DuoMenu{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.botones {
+    background-color: black;
+    color: aliceblue;
+    width: 80px;
+    height: 32px;
+    margin-left: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.botones:hover{
+    background-color: white;
+    color: black;
+}
+
+td {
+    padding: 20px;
+}
+
+.historial {
+    font-size: 40px;
+    color: #77F012;
+}
+
+.Mes{
+    padding-right: 50%;
+    font-size: 30px;
+    color: #F6BD0B;
+}
+
+.DuoImg{
+    width: 110px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+header{
+    background-color: #77F012;
+    height: 150px;
+    width: 100%;
+    
+}
+
+
+
+div, .infoFaltante  {
+    display: grid;
+    grid-column: 2;
+}
+
+
