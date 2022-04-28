@@ -262,7 +262,7 @@ const Cuidado = new Burbujas("Cuidado",6,1,4,0,3);
 const Compras3 = new Burbujas("Compras 3",6,1,4,0,3);
 const Cuentos = new Burbujas("Cuentos",6,1,4,0,3);
 const Empleos2 = new Burbujas("Empleos 2",6,1,4,0,3);
-const Salud2 = new Burbujas("Salud 2",6,1,4,0,3);
+const Salud2 = new Burbujas("Salud 2",6,2,4,0,3);
 const Escuela3 = new Burbujas("Escuela 3",6,1,4,0,3);
 const Pasado4 = new Burbujas("Pasado 4",6,1,4,1,3);
 
