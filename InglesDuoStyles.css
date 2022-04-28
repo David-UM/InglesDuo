@@ -61,7 +61,7 @@ header{
 
 div, .infoFaltante  {
     display: grid;
-    grid-column: 2;
+    grid-column: 3;
 }
 
 
