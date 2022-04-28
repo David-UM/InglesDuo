@@ -60,11 +60,42 @@ header{
 
 
 
-div {
+.lugardebotones {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin: 40px;
 }
+
+body {
+    background: url("./wallpaperDuo.jpg")
+}
+
+.contenedorhistorial {
+    display: flexbox;
+    width: 32%;
+    margin: 40px;
+    color: white;
+
+}
+@media (max-width: 700px) {
+    .contenedorhistorial {
+        width: 100%;
+        margin: 0px;
+        opacity: 1;
+        color: white;
+    
+    }
+
+    h1{
+        color:white;   
+        padding-left: 15%;
+        margin-top: -60px;
+        
+    }
+}
+
+
+
 
 
