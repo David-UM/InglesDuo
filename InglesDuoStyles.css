@@ -38,7 +38,7 @@ td {
 }
 
 .Mes{
-    padding-right: 50%;
+    padding-right: 40%;
     font-size: 30px;
     color: #F6BD0B;
 }
@@ -153,7 +153,42 @@ body {
         
     }
 }
+@media (max-width: 400px) {
+    .contenedorhistorial {
+        width: 100%;
+        margin: 0px;
+        opacity: 1;
+        color: white;
+    
+    }
 
+    h1{
+        color:white;   
+        padding-left: 27%;
+        padding-right: 2%;
+        margin-top: -80px;
+        
+    }
+
+    .botones {
+        background-color: black;
+        color: aliceblue;
+        width: 80px;
+        height: 32px;
+        margin-left: 15px;
+        margin-top: 25px; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    header{
+        background-color: #77F012;
+        height: 130px;
+        width: 100%;
+        margin-bottom: 50px;
+        font-size: 15px;
+        
+    }
+}
 
 
 
