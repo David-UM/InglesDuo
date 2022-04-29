@@ -107,15 +107,15 @@ let leccionAzar = () => {
             let actualfaltante = (ColeccionTotalDeBurbujas[number]["maximoNivel"] * 4) -  ((ColeccionTotalDeBurbujas[number]["nivel"] * 4) + ColeccionTotalDeBurbujas[number]["leccionesHechas"])
             let cantidad = getRandomIntInclusive(1,actualfaltante)
             console.log(cantidad)
-            if (cantidad < 10){return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
+            if (cantidad < 5){return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
             }else if (cantidad > 20){
                 cantidad = cantidad - 20
                 return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
             }else if (cantidad > 14){
                 cantidad = cantidad - 14
                 return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
-            }else if (cantidad > 9){
-                cantidad = cantidad - 8 
+            }else if (cantidad > 4){
+                cantidad = cantidad - 3 
                 return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
             }else {return alert(`Debes avanzar 7 niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`);}
         }
@@ -296,7 +296,7 @@ const Escuela4 = new Burbujas("Escuela 4",6,1,4,0,4);
 const Misterio = new Burbujas("Misterio",6,1,4,0,4);
 const Compras4 = new Burbujas("Compras 4",6,1,4,0,4);
 const Animales3 = new Burbujas("Animales 3",6,1,4,0,4);
-const Negocios = new Burbujas("Negocios",6,1,4,0,4);
+const Negocios = new Burbujas("Negocios",6,1,4,1,4);
 const Verbos2 = new Burbujas("Verbos 2",3,1,4,0,4);
 const Aventura3 = new Burbujas("Aventura 3",6,1,4,0,4);
 4
