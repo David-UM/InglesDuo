@@ -1,78 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="./favicon.png"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Duolingo Program</title>
-    <meta name="description" content="En esta pagina añado funcionalidades a Duolingo">
-    <link rel="canonical" href="https://david-um.github.io/InglesDuo/">
-    <link rel="stylesheet" href="./InglesDuoStyles.css">
-    <meta name="theme-color" content="#77F012">
-    <meta property="og:title" content="My Duolingo Program">
-    <meta property="og:description" content="En esta pagina añado funcionalidades a Duolingo">
-    <meta property="og:image" content="https://david-um.github.io/InglesDuo/wallpaperDuo.jpg">
-    <meta property="og:url" content="https://david-um.github.io/InglesDuo/index.html">
+    <title>Main</title>
+    <link rel="stylesheet" href="./IndexStyles/normalize.css">
+    <link rel="stylesheet" href="./IndexStyles/IndexStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-angle-double-left"></i>
+        </label>
+        <label class="logo">DuoX</label>
+        <ul class="letreros">
+            <li><a class="active" href="/index.html">Inicio</a></li>
+            <li><a href=".//DuolingoIngles/indexIngles.html">Ingles</a></li>
+            <li><a href="#">Frances</a></li>
+        </ul>
+    </nav>
     
-    <header>
-        <a href="https://www.duolingo.com/learn" target="_blank"><img src="./Duo.png" class="DuoImg"></a>
-        <h1>Pequeño simulador de Duolingo para lecciones en Ingles</h1>
-    </header>
-    
-    <div class="lugardebotones">
-    <p class="azar">
-        Haga click en el boton para obtener un ejercicio al azar segun tu progreso
-        <input type="button" value="Obtener" id="Azarboton" class="botones">
-    </p>
-    <p class="infoFaltante">
-        Haga click en el boton para obtener informacion del progreso restante
-        <input type="button" value="Obtener" id="Infoboton" class="botones">
-    </p>
-    <p class="infoHecho">
-        Haga click en el boton para obtener informacion del progreso que has hecho
-        <input type="button" value="Obtener" id="Infoboton2" class="botones">
-    </p>
-    </div>
-    <div class="contenedorhistorial">
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2" class="historial">Historial</th>
-                </tr> 
-                <tr>
-                    <th class="Mes">Abril</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Debes realizar 1 saltos en el tema de Banco 2 que está en la sección 6</td>
-                    <td>04.24.2022</td>
-                </tr>
-                <tr>
-                    <td>Debes avanzar 6 niveles en el tema de Noticias que está en la sección 5</td>
-                    <td>04.25.2022</td>
-                </tr>
-                <tr>
-                    <td>Debes avanzar 5 niveles en el tema de ¿Qué paso? que está en la sección 7</td>
-                    <td>04.26.2022</td>
-                </tr>
-                <tr>
-                    <td>Debes avanzar 1 nivel en el tema de Salud 2 que está en la sección 3</td>
-                    <td>04.27.2022</td>
-                </tr>
-                <tr>
-                    <td>Debes avanzar 1 nivel en el tema de Negocios que está en la sección 4</td>
-                    <td>04.28.2022</td>
-                </tr>
-            </tbody>
-            
-        </table>
-    </div>
-    
-
-    <script src="./InglesDuoScripts.js">  </script>
 </body>
 </html>

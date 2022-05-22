@@ -450,8 +450,8 @@ const SeccionesIngles = [Seccion0,Seccion1,Seccion2,Seccion3,Seccion4,Seccion5,S
 const Ingles = new CursosDuolingo(8350,contadordecoronas(SeccionesIngles) + 70,SeccionesIngles,"Ingles")
 
 
-const ColeccionTotalDeBurbujas = ColecciondeBurbujas0.concat(ColecciondeBurbujas1,ColecciondeBurbujas2,
-    ColecciondeBurbujas3,ColecciondeBurbujas4,ColecciondeBurbujas5,ColecciondeBurbujas6,ColecciondeBurbujas7,ColecciondeBurbujas8);
+const ColeccionTotalDeBurbujas = [...ColecciondeBurbujas0, ...ColecciondeBurbujas1,...ColecciondeBurbujas2,
+    ...ColecciondeBurbujas3,...ColecciondeBurbujas4,...ColecciondeBurbujas5,...ColecciondeBurbujas6,...ColecciondeBurbujas7,...ColecciondeBurbujas8];
 
 //Debes realizar 1 saltos en el tema de Banco 2 que está en la sección 6 || 04.24.2022
 
