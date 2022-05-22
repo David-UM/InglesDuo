@@ -63,7 +63,7 @@ a.active, a:hover{
 }
 
 body {
-    background: url("/DuolingoIngles/InglesDuoSources/wallpaperDuo.jpg")
+    background: url("https://david-um.github.io/InglesDuo/DuolingoIngles/InglesDuoSources/wallpaperDuo.jpg")
 }
 
 @media (max-width: 952px){
