@@ -62,6 +62,10 @@ a.active, a:hover{
 
 }
 
+body {
+    background: url("/DuolingoIngles/InglesDuoSources/wallpaperDuo.jpg")
+}
+
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
@@ -97,7 +101,6 @@ a.active, a:hover{
     nav ul li{
         display: block;
         margin: 50px 0;
-        line-height: 30px;
     }
     nav ul li a{
         font-size: 20px;
