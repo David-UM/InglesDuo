@@ -1,0 +1,105 @@
+nav {
+    font-family: monserrat;
+    background: #77F012;
+    height: 80px;
+    
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+    padding-right: 0px;
+}
+
+.letreros {
+    padding-right: 10%;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 60px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+
+}
+/* Fondo */
+body {
+    background: url("https://david-um.github.io/InglesDuo/DuolingoIngles/InglesDuoSources/wallpaperDuo.jpg")
+}
+
+ /* Lugar de botones */
+
+ .lugardebotones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+ }
+
+ .azar,
+ .infoFaltante,
+ .infoHecho{
+     padding: 25px;
+     color: aliceblue;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .botones{  
+     height: 35px;
+     border-radius: 7px;
+     border-color: aliceblue;
+ }
+
+ .botones:hover{
+     background-color: black;
+    color: aliceblue;
+    border-color: black;
+ }
+
+ /* Texto Resultado */
+ .contenedorTexto{
+    background-color: #1b9bff;
+    margin: 50px;
+    height: 150px;
+    opacity: 0.75;
+    border-radius: 10px;
+}
+
+.PeTexto {
+    font-size: 50px;
+    padding: 40px 30px;
+    
+}
