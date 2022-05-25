@@ -3,6 +3,20 @@
     margin: 0;
     padding: 0;
 }
+
+.contenedorTexto{
+    background-color: #1b9bff;
+    margin: 50px;
+    height: 150px;
+    opacity: 0.75;
+    border-radius: 10px;
+}
+
+.PeTexto {
+    font-size: 50px;
+    padding: 40px 30px;
+    
+}
 /* Nav */
 
 nav {

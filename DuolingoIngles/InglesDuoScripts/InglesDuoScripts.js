@@ -1,6 +1,7 @@
 const BotonParaAzar = document.getElementById("Azarboton");
 const BotonParaInfo = document.getElementById("Infoboton");
 const BotonParaInfo2 = document.getElementById("Infoboton2");
+const Texto = document.getElementById("texto");
 
 class CursosDuolingo{
     constructor(experiencia, coronas, secciones, idioma){
@@ -100,24 +101,24 @@ let leccionAzar = () => {
             //Debo añadir en el maximo las coronas faltantes
             let actualfaltante = ColeccionTotalDeBurbujas[number]["maximoNivel"] - ColeccionTotalDeBurbujas[number]["nivel"];
             let cantidad = getRandomIntInclusive(1,actualfaltante)
-            return alert(`Debes realizar ${cantidad} saltos en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)}
+            texto.innerText = `Debes realizar ${cantidad} saltos en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`}
             //console.log(cantidad)TotalD
             
         if (SaltarONiveles === 1){
             let actualfaltante = (ColeccionTotalDeBurbujas[number]["maximoNivel"] * 4) -  ((ColeccionTotalDeBurbujas[number]["nivel"] * 4) + ColeccionTotalDeBurbujas[number]["leccionesHechas"])
             let cantidad = getRandomIntInclusive(1,actualfaltante)
             console.log(cantidad)
-            if (cantidad < 5){return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
+            if (cantidad < 5){texto.innerText = `Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`
             }else if (cantidad > 20){
                 cantidad = cantidad - 20
-                return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
+                texto.innerText = `Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`
             }else if (cantidad > 14){
                 cantidad = cantidad - 14
-                return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
+                texto.innerText = `Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`
             }else if (cantidad > 4){
                 cantidad = cantidad - 3 
-                return alert(`Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`)
-            }else {return alert(`Debes avanzar 7 niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`);}
+                texto.innerText = `Debes avanzar ${cantidad} niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`
+            }else {texto.innerText = `Debes avanzar 7 niveles en el tema de ${ColeccionTotalDeBurbujas[number]["valor"]} que está en la sección ${ColeccionTotalDeBurbujas[number]["seccion"]}`;}
         }
     } else {return leccionAzar()}
     
@@ -138,7 +139,7 @@ let coronasyleccionesquefaltan = () =>{
         contadorlecciones += ColeccionTotalDeBurbujas[i]["maximoNivel"] * 4; 
         }
     let leccionesfaltantes = contadorlecciones - leccioneshechas  ;
-    return alert(`Faltan ${coronasfaltantes} coronas por conseguir y tienes ${leccionesfaltantes} lecciones incompletas en total`);
+    texto.innerText = (`Faltan ${coronasfaltantes} coronas por conseguir y tienes ${leccionesfaltantes} lecciones incompletas en total`);
     
 };
 BotonParaInfo.addEventListener("click",coronasyleccionesquefaltan);
@@ -146,7 +147,7 @@ BotonParaInfo.addEventListener("click",coronasyleccionesquefaltan);
 let progresoactual = () =>{
     let coronashechas = contadordecoronas(ColeccionTotalDeBurbujas);
     let leccioneshechas = contadordeleccioneshechastotales();
-    return alert(`Hasta ahora tienes ${coronashechas + 70} coronas y has completado ${leccioneshechas} lecciones en total`)
+    texto.innerText = `Hasta ahora tienes ${coronashechas + 70} coronas y has completado ${leccioneshechas} lecciones en total`
 }
 BotonParaInfo2.addEventListener("click",progresoactual);
 
