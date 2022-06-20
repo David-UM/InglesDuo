@@ -1,0 +1,58 @@
+.header {
+    background-color: @colorDuo;
+    font-family: @caligrafia;
+    width: 100%;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    .header-nav{
+        margin: 0;
+        padding: 0;
+        .header-nav-tittle {
+            margin: 0px;
+            padding: 0 0 0 25px;
+            line-height: 70px;
+            font-size: 35px;
+            display: inline;
+            @media @IPhone12Pro {
+               padding: 0px;
+               margin: 150px;          
+               }
+            &:hover {
+                color: aliceblue;
+            }
+        } 
+        .header-nav-ul {
+            float: right;
+            margin-right: 40px;
+            @media @IPhone12Pro {
+                display: none;
+            }
+            .header-nav-ul-li {
+                display: inline;
+                line-height: 40px;
+                margin: 0;
+                padding: 0 25px 0 0;
+                .active {
+                    background: #111;
+                    color: #FFF;
+                } 
+                a {
+                    color: #111;
+                    font-size: 17px;
+                    padding: 11px 60px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    &:hover {
+                        color: #FFF;
+                        background: #111;
+                        transition: .5s;
+                    } 
+                }
+                
+            }
+        }
+    }
+}
+
